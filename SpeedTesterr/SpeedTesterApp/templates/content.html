@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SpeedTest</title>
+</head>
+<body>
+{% csrf_token %}
+    <h3>{{ loading }}</h3>
+    <h3>{{ choosing }}</h3>
+    <h3>Found: {{ host }} located in {{ country }}</h3>
+    <h3>Checking Download Speed, Upload Speed and Ping</h3>
+    <h2>{{ download_speed }}</h2>
+    <h2>{{ upload_speed }}</h2>
+    <h2>{{ ping_result }}</h2>
+</body>
+</html>
